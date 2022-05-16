@@ -7,6 +7,7 @@ local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChil
     local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
     local mybanks = lib.Network.Invoke("get my banks")
     local BankID = mybanks[1]['BUID']
+local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsList, mydiamonds - 0);
     
 local Bank = BankID
 
